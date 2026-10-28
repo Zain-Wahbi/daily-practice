@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Search</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Weather Search</h1>
+    <p class="subtitle">Check the current weather in any city.</p>
+
+    <form id="search-form">
+      <label for="city-input">City name</label>
+
+      <div class="search-controls">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="e.g. Hama"
+          autocomplete="off"
+        >
+
+        <button type="submit" id="search-btn">Search</button>
+      </div>
+    </form>
+
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="result" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    Weather data by
+    <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+      Open-Meteo
+    </a>
+  </footer>
+</body>
+</html>
