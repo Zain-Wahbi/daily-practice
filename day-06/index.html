@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopAPI helps developers manage products through a simple REST API.">
+  <title>ShopAPI - Build Faster</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-md">
+    <nav aria-label="Main" class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-blue-600">
+        ShopAPI
+      </a>
+
+      <button
+        id="menu-button"
+        type="button"
+        class="md:hidden text-gray-800 font-bold px-3 py-2 rounded-lg hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-blue-600"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        Menu
+      </button>
+
+      <div class="hidden md:flex gap-6">
+        <a href="#features" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600 transition">Features</a>
+        <a href="#about" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600 transition">About</a>
+        <a href="#contact" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600 transition">Contact</a>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col gap-4 px-6 pb-5">
+      <a href="#features" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600">Features</a>
+      <a href="#about" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600">About</a>
+      <a href="#contact" class="hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="text-center py-16 px-6 bg-blue-600 md:py-24">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-white text-4xl font-bold md:text-5xl lg:text-6xl">
+          Build Your Store Faster with ShopAPI
+        </h1>
+
+        <p class="text-white text-lg mt-6 max-w-2xl mx-auto">
+          Manage products, organize your store data, and build powerful shopping experiences with a developer-friendly REST API.
+        </p>
+
+        <a href="#features"
+          class="inline-block bg-white text-blue-700 font-bold px-6 py-3 rounded-lg mt-8 hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-white transition">
+          Explore Features
+        </a>
+      </div>
+    </section>
+
+    <section id="features" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">
+          Everything You Need to Manage Your Store
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <article class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-bold mb-3">Product Management</h3>
+            <p>Organize your store products and manage product information through API endpoints.</p>
+          </article>
+
+          <article class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-bold mb-3">Authentication</h3>
+            <p>Protect API resources and control access using secure authentication.</p>
+          </article>
+
+          <article class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-bold mb-3">CRUD Operations</h3>
+            <p>Create, read, update, and delete product records through RESTful endpoints.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-4xl mx-auto text-center py-16 px-6">
+      <h2 class="text-3xl font-bold mb-5">About ShopAPI</h2>
+      <p class="text-gray-700 text-lg">
+        ShopAPI is a Laravel-based REST API project designed to help developers work with store products and understand backend integration.
+      </p>
+    </section>
+
+    <section id="contact" class="bg-gray-900 text-white text-center py-16 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold">Ready to Build Something Great?</h2>
+        <p class="text-gray-200 mt-4">
+          Start exploring ShopAPI and build your next project.
+        </p>
+
+        <a href="#features"
+          class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg mt-8 hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-white transition">
+          Get Started
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-950 text-gray-300 text-center py-6 px-6">
+    <p>© 2026 ShopAPI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
